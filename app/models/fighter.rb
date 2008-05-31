@@ -3,11 +3,15 @@ class Fighter < ActiveRecord::Base
   has_one :fighter_image
   
   def self.random
-    find(:first, :order_by => 'RANDOM()')
+    find(:first, :order => 'RANDOM()')
   end
   
   def fight(win)
     win_count += 1 if win
     fight_count += 1
+  end
+  
+  def uploaded_data=(image_data)
+    
   end
 end
