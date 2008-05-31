@@ -1,10 +1,10 @@
 class CreateFighters < ActiveRecord::Migration
   def self.up
-    table.create :fighters do |t|
-      t.string :name
-      t.string :path_to_image
-      t.integer :fight_count
-      t.integer :win_count
+    create_table :fighters do |t|
+      t.column :name, :string
+      t.column :path_to_image, :string
+      t.column :fight_count, :integer
+      t.column :win_count, :integer
     end
   end
 

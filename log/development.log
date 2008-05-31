@@ -1,1 +1,11 @@
 
+  [4;36;1mSQL (0.004557)[0m   [0;1mCREATE TABLE schema_info (version integer)[0m
+  [4;35;1mSQL (0.004090)[0m   [0mINSERT INTO schema_info (version) VALUES(0)[0m
+  [4;36;1mSQL (0.000000)[0m   [0;1mSQLite3::SQLException: table schema_info already exists: CREATE TABLE schema_info (version integer)[0m
+  [4;35;1mSQL (0.000352)[0m   [0mSELECT version FROM schema_info[0m
+Migrating to CreateFighters (1)
+  [4;36;1mSQL (0.003923)[0m   [0;1mCREATE TABLE fighters ("id" INTEGER PRIMARY KEY NOT NULL, "name" varchar(255) DEFAULT NULL, "path_to_image" varchar(255) DEFAULT NULL, "fight_count" integer DEFAULT NULL, "win_count" integer DEFAULT NULL) [0m
+  [4;35;1mSQL (0.003444)[0m   [0mUPDATE schema_info SET version = 1[0m
+  [4;36;1mSQL (0.000365)[0m   [0;1mSELECT * FROM schema_info[0m
+  [4;35;1mSQL (0.000338)[0m   [0mSELECT name FROM sqlite_master WHERE type = 'table'[0m
+  [4;36;1mSQL (0.022595)[0m   [0;1mPRAGMA index_list(fighters)[0m
