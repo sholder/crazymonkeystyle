@@ -1,3 +1,4 @@
+<%= form_for :figher, @fighter, :url => {:action => 'fight'} %>
 
 <div id="fighter">
     <h2><%= h fighter.name %></h2>
@@ -13,3 +14,5 @@
     <%= image_tag 'austin.jpg' %>
     <%= input :type="submit", :value=>"Austin Wins?!?!" %>
 </div>
+
+<% end %>
