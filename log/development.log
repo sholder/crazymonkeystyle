@@ -1385,3 +1385,21 @@ Processing FightersController#index (for 127.0.0.1 at 2008-05-31 16:50:40) [GET]
 Rendering  within layouts/application
 Rendering fighters/index
 Completed in 0.01345 (74 reqs/sec) | Rendering: 0.00445 (33%) | DB: 0.00104 (7%) | 200 OK [http://localhost/fighters/index]
+
+
+Processing FightersController#index (for 127.0.0.1 at 2008-05-31 16:52:21) [GET]
+  Session ID: 9df3d950f7c154f10128fd717eb0b32f
+  Parameters: {"action"=>"index", "controller"=>"fighters"}
+  [4;36;1mFighter Load (0.003870)[0m   [0;1mSELECT * FROM fighters ORDER BY RANDOM() LIMIT 1[0m
+Rendering  within layouts/application
+Rendering fighters/index
+Completed in 0.01712 (58 reqs/sec) | Rendering: 0.00305 (17%) | DB: 0.00387 (22%) | 200 OK [http://localhost/fighters/index]
+
+
+Processing FightersController#index (for 127.0.0.1 at 2008-05-31 16:52:47) [GET]
+  Session ID: 9df3d950f7c154f10128fd717eb0b32f
+  Parameters: {"action"=>"index", "controller"=>"fighters"}
+  [4;35;1mFighter Load (0.001071)[0m   [0mSELECT * FROM fighters ORDER BY RANDOM() LIMIT 1[0m
+Rendering  within layouts/application
+Rendering fighters/index
+Completed in 0.01284 (77 reqs/sec) | Rendering: 0.00428 (33%) | DB: 0.00107 (8%) | 200 OK [http://localhost/]
