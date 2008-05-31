@@ -1,9 +1,8 @@
-<%= form_for :fighter, @fighter, :url => {:action => 'fight'} %>
+<% form_for :fighter, @fighter, :url => {:action => 'fight'} do |f| %>
 
 <div id="fighter">
-    <h2><%= h fighter.name %></h2>
-    <%= image_tag figher.path_to_image %>
-    <%= input type="submit", :value=>"This guy would kick ass" %>
+    <h2><%= h @fighter.name %></h2>
+    <%= submit_tag "This guy would kick ass" %>
 </div>
 
 
@@ -12,7 +11,7 @@
 <div id="austin">
     <h2>Austin</h2>
     <%= image_tag 'austin.jpg' %>
-    <%= input :type="submit", :value=>"Austin Wins?!?!" %>
+    <%= submit_tag "Austin Wins?!?!" %>
 </div>
 
 <% end %>
