@@ -1,0 +1,17 @@
+body {
+  font-family: Verdana, Arial, sans-serif;
+  font-size: 11px;
+  color: #222;
+}
+
+.fighter_info {
+  float: left;
+  width: 250px;
+  text-align: center;
+}
+
+form h1 {
+  float: left;
+  color: #990000;
+  width: 150px;
+}

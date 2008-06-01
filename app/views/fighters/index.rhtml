@@ -1,15 +1,14 @@
 <% form_for :fighter, @fighter, :url => {:action => 'fight'} do |f| %>
 
-<div id="fighter">
+<div id="fighter" class="fighter_info">
     <h2><%= h @fighter.name %></h2>
     <%= link_to image_tag(@fighter.fighter_image.public_filename), @fighter.fighter_image.public_filename %>
     <%= submit_tag "This guy would kick ass" %>
 </div>
 
+<h1>VS.</h1>
 
-<h1> VS. </h1>
-
-<div id="austin">
+<div id="austin" class="fighter_info">
     <h2>Austin</h2>
     <%= image_tag 'austin.jpg' %>
     <%= submit_tag "Austin Wins?!?!" %>
