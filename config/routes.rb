@@ -11,8 +11,8 @@ ActionController::Routing::Routes.draw do |map|
 
   # You can have the root of your site routed by hooking up '' 
   # -- just remember to delete public/index.html.
-  map.connect '', :controller => "fighters", :action => 'index'
 
+  map.connect '', :controller => 'fighters'
   map.connect 'fighter_images/new/:fighter_id', :controller => 'fighter_images', :action => 'new'
 
   # Allow downloading Web Service WSDL as a file with an extension
