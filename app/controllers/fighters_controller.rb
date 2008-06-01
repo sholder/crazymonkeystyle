@@ -20,7 +20,7 @@ class FightersController < ApplicationController
     @fighter = Fighter.new(params[:fighter])
     if @fighter.save
       flash[:notice] = 'A new fighter has entered the ring!'
-      redirect_to :controller => :fighter_images, :action => :new
+      redirect_to :controller => :fighter_images, :action => :new, :fighter_id => @fighter.id
     else
       render :action => :new
     end

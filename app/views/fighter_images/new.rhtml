@@ -1,0 +1,7 @@
+<%= error_messages_for :fighter_image %>
+
+<% form_for :fighter_image, @fighter_image, :url => {:action => 'create'}, :html => {:multipart => true} do |f| %>
+    <label>Upload an image:</label> <%= f.file_field :uploaded_data %> <br/>
+    <%= f.hidden_field :fighter_id %>
+    <%= submit_tag 'Upload' %>
+<% end %>

@@ -13,6 +13,8 @@ ActionController::Routing::Routes.draw do |map|
   # -- just remember to delete public/index.html.
   map.connect '', :controller => "fighters", :action => 'index'
 
+  map.connect 'fighter_images/new/:fighter_id', :controller => 'fighter_images', :action => 'new'
+
   # Allow downloading Web Service WSDL as a file with an extension
   # instead of a file named 'wsdl'
   map.connect ':controller/service.wsdl', :action => 'wsdl'

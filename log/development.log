@@ -1403,3 +1403,239 @@ Processing FightersController#index (for 127.0.0.1 at 2008-05-31 16:52:47) [GET]
 Rendering  within layouts/application
 Rendering fighters/index
 Completed in 0.01284 (77 reqs/sec) | Rendering: 0.00428 (33%) | DB: 0.00107 (8%) | 200 OK [http://localhost/]
+
+
+Processing FightersController#new (for 127.0.0.1 at 2008-05-31 16:59:22) [GET]
+  Session ID: 9df3d950f7c154f10128fd717eb0b32f
+  Parameters: {"fighter_id"=>"1", "action"=>"new", "controller"=>"fighters"}
+Rendering  within layouts/application
+Rendering fighters/new
+Completed in 0.09252 (10 reqs/sec) | Rendering: 0.01370 (14%) | DB: 0.00000 (0%) | 200 OK [http://localhost/fighter_images/new/1]
+
+
+Processing FighterImagesController#new (for 127.0.0.1 at 2008-05-31 16:59:43) [GET]
+  Session ID: 9df3d950f7c154f10128fd717eb0b32f
+  Parameters: {"fighter_id"=>"1", "action"=>"new", "controller"=>"fighter_images"}
+  [4;36;1mFighter Load (0.000244)[0m   [0;1mSELECT * FROM fighters WHERE (fighters."id" = 1) [0m
+Rendering  within layouts/application
+Rendering fighter_images/new
+Completed in 0.68115 (1 reqs/sec) | Rendering: 0.01642 (2%) | DB: 0.00024 (0%) | 200 OK [http://localhost/fighter_images/new/1]
+
+
+Processing FighterImagesController#new (for 127.0.0.1 at 2008-05-31 17:00:17) [GET]
+  Session ID: 9df3d950f7c154f10128fd717eb0b32f
+  Parameters: {"fighter_id"=>"1", "action"=>"new", "controller"=>"fighter_images"}
+  [4;35;1mFighter Load (0.000238)[0m   [0mSELECT * FROM fighters WHERE (fighters."id" = 1) [0m
+Rendering  within layouts/application
+Rendering fighter_images/new
+Completed in 0.08756 (11 reqs/sec) | Rendering: 0.00230 (2%) | DB: 0.00024 (0%) | 200 OK [http://localhost/fighter_images/new/1]
+
+
+Processing FighterImagesController#create (for 127.0.0.1 at 2008-05-31 17:00:33) [POST]
+  Session ID: 9df3d950f7c154f10128fd717eb0b32f
+  Parameters: {"commit"=>"Upload", "action"=>"create", "controller"=>"fighter_images", "fighter_image"=>{"fighter_id"=>"1", "uploaded_data"=>#<File:/var/folders/zz/zzzivhrRnAmviuee++2D1k+-1kw/-Tmp-/CGI12012-0>}}
+
+
+NoMethodError (undefined method `fighter_id=' for #<FighterImage:0x237d5a0>):
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/activerecord-1.15.6/lib/active_record/base.rb:1860:in `method_missing'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/activerecord-1.15.6/lib/active_record/base.rb:1675:in `send'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/activerecord-1.15.6/lib/active_record/base.rb:1675:in `attributes='
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/activerecord-1.15.6/lib/active_record/base.rb:1674:in `each'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/activerecord-1.15.6/lib/active_record/base.rb:1674:in `attributes='
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/activerecord-1.15.6/lib/active_record/base.rb:1508:in `initialize_without_callbacks'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/activerecord-1.15.6/lib/active_record/callbacks.rb:225:in `initialize'
+    /Users/sholder/projects/crazymonkeystyle/app/controllers/fighter_images_controller.rb:9:in `new'
+    /Users/sholder/projects/crazymonkeystyle/app/controllers/fighter_images_controller.rb:9:in `create'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/actionpack-1.13.6/lib/action_controller/base.rb:1101:in `send'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/actionpack-1.13.6/lib/action_controller/base.rb:1101:in `perform_action_without_filters'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/actionpack-1.13.6/lib/action_controller/filters.rb:696:in `call_filters'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/actionpack-1.13.6/lib/action_controller/filters.rb:688:in `perform_action_without_benchmark'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/actionpack-1.13.6/lib/action_controller/benchmarking.rb:66:in `perform_action_without_rescue'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/benchmark.rb:293:in `measure'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/actionpack-1.13.6/lib/action_controller/benchmarking.rb:66:in `perform_action_without_rescue'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/actionpack-1.13.6/lib/action_controller/rescue.rb:83:in `perform_action'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/actionpack-1.13.6/lib/action_controller/base.rb:435:in `send'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/actionpack-1.13.6/lib/action_controller/base.rb:435:in `process_without_filters'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/actionpack-1.13.6/lib/action_controller/filters.rb:684:in `process_without_session_management_support'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/actionpack-1.13.6/lib/action_controller/session_management.rb:114:in `process'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/actionpack-1.13.6/lib/action_controller/base.rb:334:in `process'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/rails-1.2.6/lib/dispatcher.rb:41:in `dispatch'
+    /Library/Ruby/Gems/1.8/gems/mongrel-1.1.5/bin/../lib/mongrel/rails.rb:76:in `process'
+    /Library/Ruby/Gems/1.8/gems/mongrel-1.1.5/bin/../lib/mongrel/rails.rb:74:in `synchronize'
+    /Library/Ruby/Gems/1.8/gems/mongrel-1.1.5/bin/../lib/mongrel/rails.rb:74:in `process'
+    /Library/Ruby/Gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:159:in `process_client'
+    /Library/Ruby/Gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:158:in `each'
+    /Library/Ruby/Gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:158:in `process_client'
+    /Library/Ruby/Gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:285:in `run'
+    /System/Library/Frameworks/RubyCocoa.framework/Resources/ruby/osx/objc/ruby_addition.rb:110:in `initialize'
+    /System/Library/Frameworks/RubyCocoa.framework/Resources/ruby/osx/objc/ruby_addition.rb:110:in `pre_rubycocoa_new'
+    /System/Library/Frameworks/RubyCocoa.framework/Resources/ruby/osx/objc/ruby_addition.rb:110:in `new'
+    /Library/Ruby/Gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:285:in `run'
+    /Library/Ruby/Gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:268:in `initialize'
+    /Library/Ruby/Gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:268:in `new'
+    /Library/Ruby/Gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:268:in `run'
+    /Library/Ruby/Gems/1.8/gems/mongrel-1.1.5/lib/mongrel/configurator.rb:282:in `run'
+    /Library/Ruby/Gems/1.8/gems/mongrel-1.1.5/lib/mongrel/configurator.rb:281:in `each'
+    /Library/Ruby/Gems/1.8/gems/mongrel-1.1.5/lib/mongrel/configurator.rb:281:in `run'
+    /Library/Ruby/Gems/1.8/gems/mongrel-1.1.5/bin/mongrel_rails:128:in `run'
+    /Library/Ruby/Gems/1.8/gems/mongrel-1.1.5/lib/mongrel/command.rb:212:in `run'
+    /Library/Ruby/Gems/1.8/gems/mongrel-1.1.5/bin/mongrel_rails:281
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/activesupport-1.4.4/lib/active_support/dependencies.rb:488:in `load'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/activesupport-1.4.4/lib/active_support/dependencies.rb:488:in `load'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/activesupport-1.4.4/lib/active_support/dependencies.rb:342:in `new_constants_in'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/activesupport-1.4.4/lib/active_support/dependencies.rb:488:in `load'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/rails-1.2.6/lib/commands/servers/mongrel.rb:60
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/rubygems/custom_require.rb:27:in `gem_original_require'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/rubygems/custom_require.rb:27:in `require'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/activesupport-1.4.4/lib/active_support/dependencies.rb:495:in `require'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/activesupport-1.4.4/lib/active_support/dependencies.rb:342:in `new_constants_in'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/activesupport-1.4.4/lib/active_support/dependencies.rb:495:in `require'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/rails-1.2.6/lib/commands/server.rb:39
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/rubygems/custom_require.rb:27:in `gem_original_require'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/rubygems/custom_require.rb:27:in `require'
+    script/server:3
+
+
+Rendering /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/actionpack-1.13.6/lib/action_controller/templates/rescues/layout.rhtml (500 Internal Error)
+  [4;36;1mSQL (0.000000)[0m   [0;1mSQLite3::SQLException: table schema_info already exists: CREATE TABLE schema_info (version integer)[0m
+  [4;35;1mSQL (0.000209)[0m   [0mSELECT version FROM schema_info[0m
+  [4;36;1mSQL (0.000150)[0m   [0;1mSELECT version FROM schema_info[0m
+  [4;35;1mSQL (0.000000)[0m   [0mSQLite3::SQLException: table schema_info already exists: CREATE TABLE schema_info (version integer)[0m
+  [4;36;1mSQL (0.000185)[0m   [0;1mSELECT version FROM schema_info[0m
+Migrating to CreateFighterImages (2)
+  [4;35;1mSQL (0.003361)[0m   [0mDROP TABLE fighter_images[0m
+  [4;36;1mSQL (0.002107)[0m   [0;1mUPDATE schema_info SET version = 1[0m
+Reached target version: 1
+  [4;35;1mSQL (0.000246)[0m   [0mSELECT * FROM schema_info[0m
+  [4;36;1mSQL (0.000436)[0m   [0;1mSELECT name FROM sqlite_master WHERE type = 'table'[0m
+  [4;35;1mSQL (0.000072)[0m   [0mPRAGMA index_list(fighters)[0m
+  [4;36;1mSQL (0.000000)[0m   [0;1mSQLite3::SQLException: table schema_info already exists: CREATE TABLE schema_info (version integer)[0m
+  [4;35;1mSQL (0.000000)[0m   [0mSQLite3::SQLException: table schema_info already exists: CREATE TABLE schema_info (version integer)[0m
+  [4;36;1mSQL (0.000252)[0m   [0;1mSELECT version FROM schema_info[0m
+  [4;35;1mSQL (0.000153)[0m   [0mSELECT version FROM schema_info[0m
+Migrating to CreateFighterImages (2)
+  [4;36;1mSQL (0.004347)[0m   [0;1mCREATE TABLE fighter_images ("id" INTEGER PRIMARY KEY NOT NULL, "fighter_id" integer DEFAULT NULL, "content_type" varchar(255) DEFAULT NULL, "filename" varchar(255) DEFAULT NULL, "thumbnail" varchar(255) DEFAULT NULL, "size" integer DEFAULT NULL, "width" integer DEFAULT NULL, "height" integer DEFAULT NULL) [0m
+  [4;35;1mSQL (0.003725)[0m   [0mUPDATE schema_info SET version = 2[0m
+  [4;36;1mSQL (0.000347)[0m   [0;1mSELECT * FROM schema_info[0m
+  [4;35;1mSQL (0.000361)[0m   [0mSELECT name FROM sqlite_master WHERE type = 'table'[0m
+  [4;36;1mSQL (0.000075)[0m   [0;1mPRAGMA index_list(fighter_images)[0m
+  [4;35;1mSQL (0.000051)[0m   [0mPRAGMA index_list(fighters)[0m
+
+
+Processing FighterImagesController#new (for 127.0.0.1 at 2008-05-31 17:01:35) [GET]
+  Session ID: 9df3d950f7c154f10128fd717eb0b32f
+  Parameters: {"fighter_id"=>"1", "action"=>"new", "controller"=>"fighter_images"}
+  [4;36;1mFighter Load (0.000240)[0m   [0;1mSELECT * FROM fighters WHERE (fighters."id" = 1) [0m
+Rendering  within layouts/application
+Rendering fighter_images/new
+Completed in 0.10149 (9 reqs/sec) | Rendering: 0.00172 (1%) | DB: 0.00024 (0%) | 200 OK [http://localhost/fighter_images/new/1]
+
+
+Processing FighterImagesController#create (for 127.0.0.1 at 2008-05-31 17:01:44) [POST]
+  Session ID: 9df3d950f7c154f10128fd717eb0b32f
+  Parameters: {"commit"=>"Upload", "action"=>"create", "controller"=>"fighter_images", "fighter_image"=>{"fighter_id"=>"1", "uploaded_data"=>#<File:/var/folders/zz/zzzivhrRnAmviuee++2D1k+-1kw/-Tmp-/CGI12012-1>}}
+  [4;35;1mSQL (0.000463)[0m   [0mINSERT INTO fighter_images ("content_type", "fighter_id", "size", "thumbnail", "filename", "height", "width") VALUES('image/png', 1, 82667, NULL, 'zs.png', 600, 241)[0m
+Redirected to http://localhost:3000/
+Completed in 0.09811 (10 reqs/sec) | DB: 0.00046 (0%) | 302 Found [http://localhost/fighter_images/create]
+
+
+Processing FightersController#index (for 127.0.0.1 at 2008-05-31 17:01:44) [GET]
+  Session ID: 9df3d950f7c154f10128fd717eb0b32f
+  Parameters: {"action"=>"index", "controller"=>"fighters"}
+  [4;36;1mFighter Load (0.000976)[0m   [0;1mSELECT * FROM fighters ORDER BY RANDOM() LIMIT 1[0m
+Rendering  within layouts/application
+Rendering fighters/index
+Completed in 0.01249 (80 reqs/sec) | Rendering: 0.00370 (29%) | DB: 0.00098 (7%) | 200 OK [http://localhost/]
+
+
+Processing FightersController#index (for 127.0.0.1 at 2008-05-31 17:03:28) [GET]
+  Session ID: 9df3d950f7c154f10128fd717eb0b32f
+  Parameters: {"action"=>"index", "controller"=>"fighters"}
+  [4;35;1mFighter Load (0.000790)[0m   [0mSELECT * FROM fighters ORDER BY RANDOM() LIMIT 1[0m
+Rendering  within layouts/application
+Rendering fighters/index
+
+
+ActionView::TemplateError (undefined local variable or method `fighter' for #<#<Class:0x25ad104>:0x25ad0dc>) on line #5 of app/views/fighters/index.rhtml:
+2: 
+3: <div id="fighter">
+4:     <h2><%= h @fighter.name %></h2>
+5:     <%= link_to image_tag(fighter.fighter_image.public_filename), fighter.fighter_image.public_filename %>
+6:     <%= submit_tag "This guy would kick ass" %>
+7: </div>
+8: 
+
+    /Users/sholder/projects/crazymonkeystyle/app/views/fighters/index.rhtml:5:in `_run_rhtml_47app47views47fighters47index46rhtml'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/actionpack-1.13.6/lib/action_view/helpers/form_helper.rb:151:in `fields_for'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/actionpack-1.13.6/lib/action_view/helpers/form_helper.rb:127:in `form_for'
+    /Users/sholder/projects/crazymonkeystyle/app/views/fighters/index.rhtml:1:in `_run_rhtml_47app47views47fighters47index46rhtml'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/actionpack-1.13.6/lib/action_view/base.rb:325:in `send'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/actionpack-1.13.6/lib/action_view/base.rb:325:in `compile_and_render_template'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/actionpack-1.13.6/lib/action_view/base.rb:301:in `render_template'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/actionpack-1.13.6/lib/action_view/base.rb:260:in `render_file'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/actionpack-1.13.6/lib/action_controller/base.rb:812:in `render_file'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/actionpack-1.13.6/lib/action_controller/base.rb:717:in `render_with_no_layout'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/actionpack-1.13.6/lib/action_controller/layout.rb:247:in `render_without_benchmark'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/actionpack-1.13.6/lib/action_controller/benchmarking.rb:50:in `render'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/benchmark.rb:293:in `measure'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/actionpack-1.13.6/lib/action_controller/benchmarking.rb:50:in `render'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/actionpack-1.13.6/lib/action_controller/base.rb:1102:in `perform_action_without_filters'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/actionpack-1.13.6/lib/action_controller/filters.rb:696:in `call_filters'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/actionpack-1.13.6/lib/action_controller/filters.rb:688:in `perform_action_without_benchmark'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/actionpack-1.13.6/lib/action_controller/benchmarking.rb:66:in `perform_action_without_rescue'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/benchmark.rb:293:in `measure'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/actionpack-1.13.6/lib/action_controller/benchmarking.rb:66:in `perform_action_without_rescue'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/actionpack-1.13.6/lib/action_controller/rescue.rb:83:in `perform_action'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/actionpack-1.13.6/lib/action_controller/base.rb:435:in `send'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/actionpack-1.13.6/lib/action_controller/base.rb:435:in `process_without_filters'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/actionpack-1.13.6/lib/action_controller/filters.rb:684:in `process_without_session_management_support'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/actionpack-1.13.6/lib/action_controller/session_management.rb:114:in `process'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/actionpack-1.13.6/lib/action_controller/base.rb:334:in `process'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/rails-1.2.6/lib/dispatcher.rb:41:in `dispatch'
+    /Library/Ruby/Gems/1.8/gems/mongrel-1.1.5/lib/mongrel/rails.rb:76:in `process'
+    /Library/Ruby/Gems/1.8/gems/mongrel-1.1.5/lib/mongrel/rails.rb:74:in `synchronize'
+    /Library/Ruby/Gems/1.8/gems/mongrel-1.1.5/lib/mongrel/rails.rb:74:in `process'
+    /Library/Ruby/Gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:159:in `process_client'
+    /Library/Ruby/Gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:158:in `each'
+    /Library/Ruby/Gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:158:in `process_client'
+    /Library/Ruby/Gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:285:in `run'
+    /System/Library/Frameworks/RubyCocoa.framework/Resources/ruby/osx/objc/ruby_addition.rb:110:in `initialize'
+    /System/Library/Frameworks/RubyCocoa.framework/Resources/ruby/osx/objc/ruby_addition.rb:110:in `pre_rubycocoa_new'
+    /System/Library/Frameworks/RubyCocoa.framework/Resources/ruby/osx/objc/ruby_addition.rb:110:in `new'
+    /Library/Ruby/Gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:285:in `run'
+    /Library/Ruby/Gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:268:in `initialize'
+    /Library/Ruby/Gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:268:in `new'
+    /Library/Ruby/Gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:268:in `run'
+    /Library/Ruby/Gems/1.8/gems/mongrel-1.1.5/lib/mongrel/configurator.rb:282:in `run'
+    /Library/Ruby/Gems/1.8/gems/mongrel-1.1.5/lib/mongrel/configurator.rb:281:in `each'
+    /Library/Ruby/Gems/1.8/gems/mongrel-1.1.5/lib/mongrel/configurator.rb:281:in `run'
+    /Library/Ruby/Gems/1.8/gems/mongrel-1.1.5/bin/mongrel_rails:128:in `run'
+    /Library/Ruby/Gems/1.8/gems/mongrel-1.1.5/lib/mongrel/command.rb:212:in `run'
+    /Library/Ruby/Gems/1.8/gems/mongrel-1.1.5/bin/mongrel_rails:281
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/activesupport-1.4.4/lib/active_support/dependencies.rb:488:in `load'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/activesupport-1.4.4/lib/active_support/dependencies.rb:488:in `load'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/activesupport-1.4.4/lib/active_support/dependencies.rb:342:in `new_constants_in'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/activesupport-1.4.4/lib/active_support/dependencies.rb:488:in `load'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/rails-1.2.6/lib/commands/servers/mongrel.rb:60
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/rubygems/custom_require.rb:27:in `gem_original_require'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/rubygems/custom_require.rb:27:in `require'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/activesupport-1.4.4/lib/active_support/dependencies.rb:495:in `require'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/activesupport-1.4.4/lib/active_support/dependencies.rb:342:in `new_constants_in'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/activesupport-1.4.4/lib/active_support/dependencies.rb:495:in `require'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/rails-1.2.6/lib/commands/server.rb:39
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/rubygems/custom_require.rb:27:in `gem_original_require'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/rubygems/custom_require.rb:27:in `require'
+    script/server:3
+
+
+Rendering /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/actionpack-1.13.6/lib/action_controller/templates/rescues/layout.rhtml (500 Internal Error)
+
+
+Processing FightersController#index (for 127.0.0.1 at 2008-05-31 17:03:41) [GET]
+  Session ID: 9df3d950f7c154f10128fd717eb0b32f
+  Parameters: {"action"=>"index", "controller"=>"fighters"}
+  [4;36;1mFighter Load (0.000830)[0m   [0;1mSELECT * FROM fighters ORDER BY RANDOM() LIMIT 1[0m
+Rendering  within layouts/application
+Rendering fighters/index
+  [4;35;1mFighterImage Load (0.000348)[0m   [0mSELECT * FROM fighter_images WHERE (fighter_images.fighter_id = 1) LIMIT 1[0m
+Completed in 0.09125 (10 reqs/sec) | Rendering: 0.08268 (90%) | DB: 0.00118 (1%) | 200 OK [http://localhost/]
