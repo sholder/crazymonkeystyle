@@ -15,6 +15,18 @@
     <%= submit_tag "Austin Wins?!?!" %>
 </div>
 
+<div id="description">
+    <label>Describe the fight!</label> <%= text_area_tag :fight_description, '', :size => '40x20' %>
+</div>
+
 <% end %>
+
+<div id="prev_fights">
+    <% @fights.each do |fd| %>
+    <div>
+        <%= h fd.fighter.name %> <%= fd.fighter_won? ? 'won' : 'lost' %> against Austin - <%= h fd.description %>
+    </div>
+    <% end %>
+</div>
 
 <%= link_to "Step in to the Ring", :action => "new" %>

@@ -2,12 +2,13 @@ class FightersController < ApplicationController
   
   def index
     @fighter = Fighter.random
+    @fights = FightDescription.sample
   end
   
   def fight
     @win = params[:commit] =~ /kick ass/
     @fighter = Fighter.find(params[:fighter][:id])
-    @fighter.fight(@win)
+    @fighter.fight(@win, params[:fight_description])
     @fighter.save!
     if(@win)
       render :action => :win
