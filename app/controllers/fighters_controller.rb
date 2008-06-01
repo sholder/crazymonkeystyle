@@ -5,11 +5,12 @@ class FightersController < ApplicationController
   end
   
   def fight
-    @fighter = Fighter.find(params[:id])
-    @fighter.fight(params[:win])
+    @win = params[:commit] =~ /kick ass/
+    @fighter = Fighter.find(params[:fighter][:id])
+    @fighter.fight(@win)
     @fighter.save!
     flash[:notice] = 'duh, recorded, this message is dumb'
-    redirect_to :index
+    redirect_to :action => :index
   end
 
   def new

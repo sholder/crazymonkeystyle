@@ -8,7 +8,9 @@ class Fighter < ActiveRecord::Base
   end
   
   def fight(win)
-    win_count += 1 if win
-    fight_count += 1
+    if win
+      self.win_count = self.win_count + 1
+    end
+    self.fight_count = self.fight_count + 1
   end  
 end

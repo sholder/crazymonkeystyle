@@ -3,6 +3,7 @@
 <div id="fighter">
     <h2><%= h @fighter.name %></h2>
     <%= link_to image_tag(@fighter.fighter_image.public_filename), @fighter.fighter_image.public_filename %>
+    <%= f.hidden_field :id %>
     <%= submit_tag "This guy would kick ass" %>
 </div>
 
