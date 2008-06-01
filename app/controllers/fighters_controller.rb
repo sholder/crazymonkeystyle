@@ -9,8 +9,11 @@ class FightersController < ApplicationController
     @fighter = Fighter.find(params[:fighter][:id])
     @fighter.fight(@win)
     @fighter.save!
-    flash[:notice] = 'duh, recorded, this message is dumb'
-    redirect_to :action => :index
+    if(@win)
+      render :action => :win
+    else
+      render :action => :lose
+    end
   end
 
   def new

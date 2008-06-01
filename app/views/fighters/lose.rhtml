@@ -1,0 +1,5 @@
+<div>
+    <p><%= h @fighter.name %>'s overconfidence gets the best of him, and Austin pulls out a victory.  Oh, the shame!</p>
+    <p><%= h @fighter.name %> is now <%= @fighter.win_count %> and <%= @fighter.loss_count %> against Austin.</p>
+</div>
+<%= link_to "Start a new fight", :action => "index" %>

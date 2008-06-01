@@ -13,4 +13,8 @@ class Fighter < ActiveRecord::Base
     end
     self.fight_count = self.fight_count + 1
   end  
+  
+  def loss_count
+    self.fight_count - self.win_count
+  end
 end
