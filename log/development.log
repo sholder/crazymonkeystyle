@@ -1,0 +1,231 @@
+
+
+Processing FightersController#index (for 127.0.0.1 at 2008-05-31 16:40:27) [GET]
+  Session ID: 9df3d950f7c154f10128fd717eb0b32f
+  Parameters: {"action"=>"index", "controller"=>"fighters"}
+
+
+ArgumentError (Unknown key(s): order_by):
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/activesupport-1.4.4/lib/active_support/core_ext/hash/keys.rb:48:in `assert_valid_keys'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/activerecord-1.15.6/lib/active_record/base.rb:1477:in `validate_find_options'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/activerecord-1.15.6/lib/active_record/base.rb:413:in `find'
+    /Users/sholder/projects/crazymonkeystyle/app/models/fighter.rb:6:in `random'
+    /Users/sholder/projects/crazymonkeystyle/app/controllers/fighters_controller.rb:4:in `index'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/actionpack-1.13.6/lib/action_controller/base.rb:1101:in `send'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/actionpack-1.13.6/lib/action_controller/base.rb:1101:in `perform_action_without_filters'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/actionpack-1.13.6/lib/action_controller/filters.rb:696:in `call_filters'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/actionpack-1.13.6/lib/action_controller/filters.rb:688:in `perform_action_without_benchmark'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/actionpack-1.13.6/lib/action_controller/benchmarking.rb:66:in `perform_action_without_rescue'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/benchmark.rb:293:in `measure'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/actionpack-1.13.6/lib/action_controller/benchmarking.rb:66:in `perform_action_without_rescue'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/actionpack-1.13.6/lib/action_controller/rescue.rb:83:in `perform_action'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/actionpack-1.13.6/lib/action_controller/base.rb:435:in `send'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/actionpack-1.13.6/lib/action_controller/base.rb:435:in `process_without_filters'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/actionpack-1.13.6/lib/action_controller/filters.rb:684:in `process_without_session_management_support'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/actionpack-1.13.6/lib/action_controller/session_management.rb:114:in `process'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/actionpack-1.13.6/lib/action_controller/base.rb:334:in `process'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/rails-1.2.6/lib/dispatcher.rb:41:in `dispatch'
+    /Library/Ruby/Gems/1.8/gems/mongrel-1.1.5/bin/../lib/mongrel/rails.rb:76:in `process'
+    /Library/Ruby/Gems/1.8/gems/mongrel-1.1.5/bin/../lib/mongrel/rails.rb:74:in `synchronize'
+    /Library/Ruby/Gems/1.8/gems/mongrel-1.1.5/bin/../lib/mongrel/rails.rb:74:in `process'
+    /Library/Ruby/Gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:159:in `process_client'
+    /Library/Ruby/Gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:158:in `each'
+    /Library/Ruby/Gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:158:in `process_client'
+    /Library/Ruby/Gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:285:in `run'
+    /Library/Ruby/Gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:285:in `initialize'
+    /Library/Ruby/Gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:285:in `new'
+    /Library/Ruby/Gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:285:in `run'
+    /Library/Ruby/Gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:268:in `initialize'
+    /Library/Ruby/Gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:268:in `new'
+    /Library/Ruby/Gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:268:in `run'
+    /Library/Ruby/Gems/1.8/gems/mongrel-1.1.5/lib/mongrel/configurator.rb:282:in `run'
+    /Library/Ruby/Gems/1.8/gems/mongrel-1.1.5/lib/mongrel/configurator.rb:281:in `each'
+    /Library/Ruby/Gems/1.8/gems/mongrel-1.1.5/lib/mongrel/configurator.rb:281:in `run'
+    /Library/Ruby/Gems/1.8/gems/mongrel-1.1.5/bin/mongrel_rails:128:in `run'
+    /Library/Ruby/Gems/1.8/gems/mongrel-1.1.5/lib/mongrel/command.rb:212:in `run'
+    /Library/Ruby/Gems/1.8/gems/mongrel-1.1.5/bin/mongrel_rails:281
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/activesupport-1.4.4/lib/active_support/dependencies.rb:488:in `load'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/activesupport-1.4.4/lib/active_support/dependencies.rb:488:in `load'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/activesupport-1.4.4/lib/active_support/dependencies.rb:342:in `new_constants_in'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/activesupport-1.4.4/lib/active_support/dependencies.rb:488:in `load'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/rails-1.2.6/lib/commands/servers/mongrel.rb:60
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/rubygems/custom_require.rb:27:in `gem_original_require'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/rubygems/custom_require.rb:27:in `require'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/activesupport-1.4.4/lib/active_support/dependencies.rb:495:in `require'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/activesupport-1.4.4/lib/active_support/dependencies.rb:342:in `new_constants_in'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/activesupport-1.4.4/lib/active_support/dependencies.rb:495:in `require'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/rails-1.2.6/lib/commands/server.rb:39
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/rubygems/custom_require.rb:27:in `gem_original_require'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/rubygems/custom_require.rb:27:in `require'
+    script/server:3
+
+
+Rendering /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/actionpack-1.13.6/lib/action_controller/templates/rescues/layout.rhtml (500 Internal Error)
+
+
+Processing FightersController#index (for 127.0.0.1 at 2008-05-31 16:40:50) [GET]
+  Session ID: 9df3d950f7c154f10128fd717eb0b32f
+  Parameters: {"action"=>"index", "controller"=>"fighters"}
+  [4;36;1mFighter Load (0.001278)[0m   [0;1mSELECT * FROM fighters ORDER BY RANDOM() LIMIT 1[0m
+Rendering  within layouts/application
+Rendering fighters/index
+ERROR: compiling _run_rhtml_47app47views47fighters47index46rhtml RAISED compile error
+/Users/sholder/projects/crazymonkeystyle/app/views/fighters/index.rhtml:15: syntax error, unexpected tSTRING_BEG, expecting ')'
+_erbout.concat "    "; _erbout.concat(( input :type="submit", :value=>"Austin Wins?!?!" ).to_s); _erbout.concat "\n"
+                                                     ^
+/Users/sholder/projects/crazymonkeystyle/app/views/fighters/index.rhtml:15: syntax error, unexpected ',', expecting ')'
+_erbout.concat "    "; _erbout.concat(( input :type="submit", :value=>"Austin Wins?!?!" ).to_s); _erbout.concat "\n"
+                                                             ^
+/Users/sholder/projects/crazymonkeystyle/app/views/fighters/index.rhtml:19: syntax error, unexpected kEND, expecting $end
+Function body: def _run_rhtml_47app47views47fighters47index46rhtml(local_assigns)
+_erbout = ''; _erbout.concat(( form_for :fighter, @fighter, :url => {:action => 'fight'} ).to_s); _erbout.concat "\n"
+_erbout.concat "\n"
+_erbout.concat "<div id=\"fighter\">\n"
+_erbout.concat "    <h2>"; _erbout.concat(( h fighter.name ).to_s); _erbout.concat "</h2>\n"
+_erbout.concat "    "; _erbout.concat(( image_tag figher.path_to_image ).to_s); _erbout.concat "\n"
+_erbout.concat "    "; _erbout.concat(( input type="submit", :value=>"This guy would kick ass" ).to_s); _erbout.concat "\n"
+_erbout.concat "</div>\n"
+_erbout.concat "\n"
+_erbout.concat "\n"
+_erbout.concat "<h1> VS. </h1>\n"
+_erbout.concat "\n"
+_erbout.concat "<div id=\"austin\">\n"
+_erbout.concat "    <h2>Austin</h2>\n"
+_erbout.concat "    "; _erbout.concat(( image_tag 'austin.jpg' ).to_s); _erbout.concat "\n"
+_erbout.concat "    "; _erbout.concat(( input :type="submit", :value=>"Austin Wins?!?!" ).to_s); _erbout.concat "\n"
+_erbout.concat "</div>\n"
+_erbout.concat "\n"
+ end ; _erbout
+end
+Backtrace: /Users/sholder/projects/crazymonkeystyle/app/views/fighters/index.rhtml:19:in `compile_template'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/actionpack-1.13.6/lib/action_view/base.rb:318:in `compile_and_render_template'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/actionpack-1.13.6/lib/action_view/base.rb:301:in `render_template'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/actionpack-1.13.6/lib/action_view/base.rb:260:in `render_file'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/actionpack-1.13.6/lib/action_controller/base.rb:812:in `render_file'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/actionpack-1.13.6/lib/action_controller/base.rb:717:in `render_with_no_layout'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/actionpack-1.13.6/lib/action_controller/layout.rb:247:in `render_without_benchmark'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/actionpack-1.13.6/lib/action_controller/benchmarking.rb:50:in `render'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/benchmark.rb:293:in `measure'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/actionpack-1.13.6/lib/action_controller/benchmarking.rb:50:in `render'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/actionpack-1.13.6/lib/action_controller/base.rb:1102:in `perform_action_without_filters'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/actionpack-1.13.6/lib/action_controller/filters.rb:696:in `call_filters'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/actionpack-1.13.6/lib/action_controller/filters.rb:688:in `perform_action_without_benchmark'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/actionpack-1.13.6/lib/action_controller/benchmarking.rb:66:in `perform_action_without_rescue'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/benchmark.rb:293:in `measure'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/actionpack-1.13.6/lib/action_controller/benchmarking.rb:66:in `perform_action_without_rescue'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/actionpack-1.13.6/lib/action_controller/rescue.rb:83:in `perform_action'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/actionpack-1.13.6/lib/action_controller/base.rb:435:in `send'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/actionpack-1.13.6/lib/action_controller/base.rb:435:in `process_without_filters'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/actionpack-1.13.6/lib/action_controller/filters.rb:684:in `process_without_session_management_support'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/actionpack-1.13.6/lib/action_controller/session_management.rb:114:in `process'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/actionpack-1.13.6/lib/action_controller/base.rb:334:in `process'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/rails-1.2.6/lib/dispatcher.rb:41:in `dispatch'
+/Library/Ruby/Gems/1.8/gems/mongrel-1.1.5/bin/../lib/mongrel/rails.rb:76:in `process'
+/Library/Ruby/Gems/1.8/gems/mongrel-1.1.5/bin/../lib/mongrel/rails.rb:74:in `synchronize'
+/Library/Ruby/Gems/1.8/gems/mongrel-1.1.5/bin/../lib/mongrel/rails.rb:74:in `process'
+/Library/Ruby/Gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:159:in `process_client'
+/Library/Ruby/Gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:158:in `each'
+/Library/Ruby/Gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:158:in `process_client'
+/Library/Ruby/Gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:285:in `run'
+/Library/Ruby/Gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:285:in `initialize'
+/Library/Ruby/Gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:285:in `new'
+/Library/Ruby/Gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:285:in `run'
+/Library/Ruby/Gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:268:in `initialize'
+/Library/Ruby/Gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:268:in `new'
+/Library/Ruby/Gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:268:in `run'
+/Library/Ruby/Gems/1.8/gems/mongrel-1.1.5/lib/mongrel/configurator.rb:282:in `run'
+/Library/Ruby/Gems/1.8/gems/mongrel-1.1.5/lib/mongrel/configurator.rb:281:in `each'
+/Library/Ruby/Gems/1.8/gems/mongrel-1.1.5/lib/mongrel/configurator.rb:281:in `run'
+/Library/Ruby/Gems/1.8/gems/mongrel-1.1.5/bin/mongrel_rails:128:in `run'
+/Library/Ruby/Gems/1.8/gems/mongrel-1.1.5/lib/mongrel/command.rb:212:in `run'
+/Library/Ruby/Gems/1.8/gems/mongrel-1.1.5/bin/mongrel_rails:281
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/activesupport-1.4.4/lib/active_support/dependencies.rb:488:in `load'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/activesupport-1.4.4/lib/active_support/dependencies.rb:488:in `load'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/activesupport-1.4.4/lib/active_support/dependencies.rb:342:in `new_constants_in'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/activesupport-1.4.4/lib/active_support/dependencies.rb:488:in `load'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/rails-1.2.6/lib/commands/servers/mongrel.rb:60
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/rubygems/custom_require.rb:27:in `gem_original_require'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/rubygems/custom_require.rb:27:in `require'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/activesupport-1.4.4/lib/active_support/dependencies.rb:495:in `require'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/activesupport-1.4.4/lib/active_support/dependencies.rb:342:in `new_constants_in'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/activesupport-1.4.4/lib/active_support/dependencies.rb:495:in `require'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/rails-1.2.6/lib/commands/server.rb:39
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/rubygems/custom_require.rb:27:in `gem_original_require'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/rubygems/custom_require.rb:27:in `require'
+script/server:3
+
+
+ActionView::TemplateError (compile error
+/Users/sholder/projects/crazymonkeystyle/app/views/fighters/index.rhtml:15: syntax error, unexpected tSTRING_BEG, expecting ')'
+_erbout.concat "    "; _erbout.concat(( input :type="submit", :value=>"Austin Wins?!?!" ).to_s); _erbout.concat "\n"
+                                                     ^
+/Users/sholder/projects/crazymonkeystyle/app/views/fighters/index.rhtml:15: syntax error, unexpected ',', expecting ')'
+_erbout.concat "    "; _erbout.concat(( input :type="submit", :value=>"Austin Wins?!?!" ).to_s); _erbout.concat "\n"
+                                                             ^
+/Users/sholder/projects/crazymonkeystyle/app/views/fighters/index.rhtml:19: syntax error, unexpected kEND, expecting $end) on line #15 of app/views/fighters/index.rhtml:
+12: <div id="austin">
+13:     <h2>Austin</h2>
+14:     <%= image_tag 'austin.jpg' %>
+15:     <%= input :type="submit", :value=>"Austin Wins?!?!" %>
+16: </div>
+17: 
+18: <% end %>
+    /Users/sholder/projects/crazymonkeystyle/app/views/fighters/index.rhtml:19:in `compile_template'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/actionpack-1.13.6/lib/action_view/base.rb:318:in `compile_and_render_template'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/actionpack-1.13.6/lib/action_view/base.rb:301:in `render_template'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/actionpack-1.13.6/lib/action_view/base.rb:260:in `render_file'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/actionpack-1.13.6/lib/action_controller/base.rb:812:in `render_file'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/actionpack-1.13.6/lib/action_controller/base.rb:717:in `render_with_no_layout'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/actionpack-1.13.6/lib/action_controller/layout.rb:247:in `render_without_benchmark'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/actionpack-1.13.6/lib/action_controller/benchmarking.rb:50:in `render'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/benchmark.rb:293:in `measure'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/actionpack-1.13.6/lib/action_controller/benchmarking.rb:50:in `render'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/actionpack-1.13.6/lib/action_controller/base.rb:1102:in `perform_action_without_filters'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/actionpack-1.13.6/lib/action_controller/filters.rb:696:in `call_filters'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/actionpack-1.13.6/lib/action_controller/filters.rb:688:in `perform_action_without_benchmark'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/actionpack-1.13.6/lib/action_controller/benchmarking.rb:66:in `perform_action_without_rescue'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/benchmark.rb:293:in `measure'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/actionpack-1.13.6/lib/action_controller/benchmarking.rb:66:in `perform_action_without_rescue'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/actionpack-1.13.6/lib/action_controller/rescue.rb:83:in `perform_action'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/actionpack-1.13.6/lib/action_controller/base.rb:435:in `send'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/actionpack-1.13.6/lib/action_controller/base.rb:435:in `process_without_filters'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/actionpack-1.13.6/lib/action_controller/filters.rb:684:in `process_without_session_management_support'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/actionpack-1.13.6/lib/action_controller/session_management.rb:114:in `process'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/actionpack-1.13.6/lib/action_controller/base.rb:334:in `process'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/rails-1.2.6/lib/dispatcher.rb:41:in `dispatch'
+    /Library/Ruby/Gems/1.8/gems/mongrel-1.1.5/lib/mongrel/rails.rb:76:in `process'
+    /Library/Ruby/Gems/1.8/gems/mongrel-1.1.5/lib/mongrel/rails.rb:74:in `synchronize'
+    /Library/Ruby/Gems/1.8/gems/mongrel-1.1.5/lib/mongrel/rails.rb:74:in `process'
+    /Library/Ruby/Gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:159:in `process_client'
+    /Library/Ruby/Gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:158:in `each'
+    /Library/Ruby/Gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:158:in `process_client'
+    /Library/Ruby/Gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:285:in `run'
+    /Library/Ruby/Gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:285:in `initialize'
+    /Library/Ruby/Gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:285:in `new'
+    /Library/Ruby/Gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:285:in `run'
+    /Library/Ruby/Gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:268:in `initialize'
+    /Library/Ruby/Gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:268:in `new'
+    /Library/Ruby/Gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:268:in `run'
+    /Library/Ruby/Gems/1.8/gems/mongrel-1.1.5/lib/mongrel/configurator.rb:282:in `run'
+    /Library/Ruby/Gems/1.8/gems/mongrel-1.1.5/lib/mongrel/configurator.rb:281:in `each'
+    /Library/Ruby/Gems/1.8/gems/mongrel-1.1.5/lib/mongrel/configurator.rb:281:in `run'
+    /Library/Ruby/Gems/1.8/gems/mongrel-1.1.5/bin/mongrel_rails:128:in `run'
+    /Library/Ruby/Gems/1.8/gems/mongrel-1.1.5/lib/mongrel/command.rb:212:in `run'
+    /Library/Ruby/Gems/1.8/gems/mongrel-1.1.5/bin/mongrel_rails:281
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/activesupport-1.4.4/lib/active_support/dependencies.rb:488:in `load'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/activesupport-1.4.4/lib/active_support/dependencies.rb:488:in `load'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/activesupport-1.4.4/lib/active_support/dependencies.rb:342:in `new_constants_in'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/activesupport-1.4.4/lib/active_support/dependencies.rb:488:in `load'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/rails-1.2.6/lib/commands/servers/mongrel.rb:60
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/rubygems/custom_require.rb:27:in `gem_original_require'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/rubygems/custom_require.rb:27:in `require'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/activesupport-1.4.4/lib/active_support/dependencies.rb:495:in `require'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/activesupport-1.4.4/lib/active_support/dependencies.rb:342:in `new_constants_in'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/activesupport-1.4.4/lib/active_support/dependencies.rb:495:in `require'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/rails-1.2.6/lib/commands/server.rb:39
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/rubygems/custom_require.rb:27:in `gem_original_require'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/rubygems/custom_require.rb:27:in `require'
+    script/server:3
+
+
+Rendering /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/actionpack-1.13.6/lib/action_controller/templates/rescues/layout.rhtml (500 Internal Error)
