@@ -2,3 +2,4 @@ db/schema.rb
 log
 db/*.sqlite3
 tmp
+public/fighter_images

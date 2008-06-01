@@ -1,0 +1,2 @@
+module FighterImagesHelper
+end
